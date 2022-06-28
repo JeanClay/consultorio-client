@@ -14,7 +14,7 @@
                 <th>Telefone</th>
                 <th>Celular</th>
                 <th>Sexo</th>
-                <th>Convenio</th>
+                <th>Tipo de Atendimento</th>
                 <th>Cartao Convenio</th>
                 <th>Opcoes</th>
             </tr>
@@ -128,9 +128,9 @@ export default {
     font-size: xx-large;
     width: 100%;
     justify-content: space-around;
+    padding-inline: 15%;
 }
 .tableCss{
-    padding: 10px;
     display: flex;
     justify-content: center;
 }

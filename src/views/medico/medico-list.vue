@@ -128,6 +128,7 @@ export default {
     font-size: xx-large;
     width: 100%;
     justify-content: space-around;
+    padding-inline: 15%;
 }
 .tableCss{
     padding: 10px;

@@ -122,11 +122,13 @@ export default {
 </script>
 
 <style scoped>
+
 .topo{
     display: flex;
     font-size: xx-large;
     width: 100%;
     justify-content: space-around;
+    padding-inline: 16%;
 }
 .tableCss{
     padding: 10px;

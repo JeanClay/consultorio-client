@@ -1,12 +1,11 @@
 <template>
     <nav class="navbar header" role="navigation" aria-label="main navigation" >
-        <div class="navbar-brand" >
-            <a class="navbar-item">
-                <router-link to="/">
+        <div class="navbar-brand is-align-items-center" >
+            <router-link to="/">
+                <a class="navbar-item">
                     Consultorio
-                </router-link>
-
-            </a>
+                </a>
+            </router-link>
         </div>
 
         <div id="navbarBasicExample" class="navbar-menu">
