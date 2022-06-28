@@ -39,16 +39,49 @@ const routes: Array<RouteRecordRaw> = [
     path: '/medico',
     name: 'medico',
     component: () => import('../views/medico/medico-list.vue')
+
+  },
+  {
+    path:'/medico/formcadastro',
+    name: 'medico-form-cadastro',
+    component: () => import('../views/medico/medico-form-cadastro.vue')
+  },
+  {
+    path:'/medico/formeditar',
+    name: 'medico-form-editar',
+    component: () => import('../views/medico/medico-form-editar.vue')
   },
   {
     path: '/paciente',
     name: 'paciente',
     component: () => import('../views/paciente/paciente-list.vue')
+
+  },
+  {
+    path:'/paciente/formcadastro',
+    name: 'paciente-form-cadastro',
+    component: () => import('../views/paciente/paciente-form-cadastro.vue')
+  },
+  {
+    path:'/paciente/formeditar',
+    name: 'paciente-form-editar',
+    component: () => import('../views/paciente/paciente-form-editar.vue')
   },
   {
     path: '/secretaria',
     name: 'secretaria',
     component: () => import('../views/secretaria/secretaria-list.vue')
+
+  },
+  {
+    path:'/secretaria/formcadastro',
+    name: 'secretaria-form-cadastro',
+    component: () => import('../views/secretaria/secretaria-form-cadastro.vue')
+  },
+  {
+    path:'/secretaria/formeditar',
+    name: 'secretaria-form-editar',
+    component: () => import('../views/secretaria/secretaria-form-editar.vue')
   }
 ]
 
