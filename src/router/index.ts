@@ -16,9 +16,20 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   },
   {
-    path: '/especialidade',
-    name: 'especialidade',
-    component: () => import('../views/especialidade/especialidade-list.vue')
+    path: '/especialidade/listar',
+    name: 'especialidade-listar',
+    component: () => import(/* webpackChunkName: "list" */ '../views/especialidade/listagem-especialidade.vue')
+  },
+  {
+    path: '/especialidade/formulario',
+    name: 'especialidade-cadastrar',
+    component: () => import(/* webpackChunkName: "form" */ '../views/especialidade/formulario-especialidade.vue')
+  },
+  {
+    path: '/especialidade/formulario/:model/:id',
+    name: 'especialidade-detalhar',
+    props: (router) => ({ id: router.params.id, model: router.params.model }),
+    component: () => import(/* webpackChunkName: "form" */ '../views/especialidade/formulario-especialidade.vue')
   },
   {
     path: '/convenio',
@@ -52,20 +63,21 @@ const routes: Array<RouteRecordRaw> = [
     component: () => import('../views/medico/medico-form-editar.vue')
   },
   {
-    path: '/paciente',
+    path: '/paciente/listar',
     name: 'paciente',
-    component: () => import('../views/paciente/paciente-list.vue')
+    component: () => import('../views/paciente/listagem-paciente.vue')
 
   },
   {
-    path:'/paciente/formcadastro',
-    name: 'paciente-form-cadastro',
-    component: () => import('../views/paciente/paciente-form-cadastro.vue')
+    path: '/paciente/formulario',
+    name: 'paciente-cadastrar',
+    component: () => import(/* webpackChunkName: "form" */ '../views/paciente/formulario-paciente.vue')
   },
   {
-    path:'/paciente/formeditar',
-    name: 'paciente-form-editar',
-    component: () => import('../views/paciente/paciente-form-editar.vue')
+    path: '/paciente/formulario/:model/:id',
+    name: 'paciente-detalhar',
+    props: (router) => ({ id: router.params.id, model: router.params.model }),
+    component: () => import(/* webpackChunkName: "form" */ '../views/paciente/formulario-paciente.vue')
   },
   {
     path: '/secretaria',

@@ -13,13 +13,13 @@ export class PageRequest {
     direction!: string
 
     constructor() {
-      this.filter = ''
-      this.currentPage = 0
-      this.pageSize = 10
-      this.direction = 'asc'
+        this.filter = ''
+        this.currentPage = 0
+        this.pageSize = 10
+        this.direction = 'asc'
     }
 
     public isSortable(): boolean {
-      return this.sortField !== undefined && this.direction !== undefined
+        return this.sortField !== undefined && this.direction !== undefined
     }
 }

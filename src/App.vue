@@ -34,7 +34,7 @@
                     </a>
 
                     <div class="navbar-dropdown">
-                        <router-link to="/paciente">
+                        <router-link to="/paciente/listar">
                             <a class="navbar-item">
                                 Paciente
                             </a>
@@ -57,7 +57,7 @@
                     </a>
 
                     <div class="navbar-dropdown">
-                        <router-link to="/especialidade">
+                        <router-link to="/especialidade/listar">
                             <a class="navbar-item">
                                 Especialidade
                             </a>

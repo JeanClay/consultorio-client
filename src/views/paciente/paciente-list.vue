@@ -128,7 +128,7 @@ export default {
     font-size: xx-large;
     width: 100%;
     justify-content: space-around;
-    padding-inline: 15%;
+    padding-inline: 11 %;
 }
 .tableCss{
     display: flex;
